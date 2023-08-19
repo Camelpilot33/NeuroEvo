@@ -22,7 +22,7 @@ let generation = new Generation(20, new NN(2,1,3,5))
 ```
 Repeatedly assign fitness and evolve the generation:
 ```js
-for (let i = 0; i < 1000; i++) { //1000 generations
+for (let j = 0; j < 1000; j++) { //1000 generations
     for (let i = 0; i < 20; i++) { //assign fitness values to each of the generations
         generation.setFitness(i, - Math.abs(0 - generation.pop[i].run([-1, 1])[0])); //set fitness to negative distance from 0
     }
